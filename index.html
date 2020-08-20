@@ -4198,7 +4198,92 @@
 </div>
 <script>
   // Search script
-  var docs= [{id: "getting-started", keys: ["html","viewport","head","meta","getting started","introduction","browser support","installation","usage","setup","cdn","npm","yarn"]  },{id: "common-textual-elements", keys: ["p","paragraph","text","textual elements","strong","bold","b","em","i","emphasis","italics","small","a","link","hr","horizontal rule","sub","subscript","sup","exponent","superscript","normalize","reset"]  },{id: "heading", keys: ["heading","h1","h2","h3","h4","h5","h6","small","title","subtitle","subheading"]  },{id: "images-captions", keys: ["img","image","responsive","responsiveness","caption","figure","figcaption"]  },{id: "lists", keys: ["list","ul","ol","li"]  },{id: "code-and-quotations", keys: ["code","pre","kbd","blockquote","quotation"]  },{id: "grid", keys: ["grid","grid system","col","column","layout","row","container","small","medium","large","sm","md","lg","cols","predefined","offset","order","reorder","first","last","normal"]  },{id: "cards", keys: ["card","row","section","container","col","column","small","large","fluid","warning","error"]  },{id: "card-sections", keys: ["card","row","section","container","col","column","media","double-padded","dark"]  },{id: "forms-and-input", keys: ["form","fieldset","legend","input","type","text","checkbox","radio","email","password","tel","input-group","input group","row","col","column","vertical","fluid","file","upload","select","textarea","option","label"]  },{id: "buttons", keys: ["button","input","reset","submit","link","a","label","primary","secondary","tertiary","aria","small","large","inverse"]  },{id: "input-grouping", keys: ["input group","input-group","vertical","fluid","input","button","button group","button-group"]  },{id: "header", keys: ["navigation","header","sticky","button","logo","link"]  },{id: "navigation-bar", keys: ["navigation","bar","nav","link"]  },{id: "footer", keys: ["navigation","footer","sticky","link"]  },{id: "drawer", keys: ["drawer","checkbox","toggle","close","drawer-toggle","drawer-close","menu","navigation","hamburger"]  },{id: "tables", keys: ["table","caption","thead","tbody","tr","th","td","horizontal","striped","hoverable"]  },{id: "text-highlighting", keys: ["mark","highlight","text highlighting","tag","primary","secondary","tertiary","inline-block"]  },{id: "toasts", keys: ["span","toast","mobile","contextual","message"]  },{id: "tooltips", keys: ["tooltip","aria-label","contextual","bottom","span"]  },{id: "modal-dialogs", keys: ["modal","dialog","contextual","alert","notification"]  },{id: "spoilers-and-accordions", keys: ["spoiler","collapse","accordion","contextual","vertical tabs"]  },{id: "progress-bars", keys: ["progress","bar","primary","secondary","tertiary","inline"]  },{id: "donut-spinners", keys: ["spinner","donut","loading","progress","primary","secondary","tertiary","inline","animation","animated"]  },{id: "icons", keys: ["icon","svg","feather","icons"]  },{id: "visibility-helpers", keys: ["hidden","visibility","visually-hidden","accessibility","utility"]  },{id: "element-decorators", keys: ["border","border-radius","bordered","rounded","circular","shadowed","utility"]  },{id: "responsive-spacing-sizing", keys: ["responsiveness","margin","padding","responsive-margin","responsive-margin"]  }];
+  var docs = [{
+  		id: "getting-started",
+  		keys: ["html", "viewport", "head", "meta", "getting started", "introduction", "browser support", "installation", "usage", "setup", "cdn", "npm", "yarn"]
+  	}, {
+  		id: "common-textual-elements",
+  		keys: ["p", "paragraph", "text", "textual elements", "strong", "bold", "b", "em", "i", "emphasis", "italics", "small", "a", "link", "hr", "horizontal rule", "sub", "subscript", "sup", "exponent", "superscript", "normalize", "reset"]
+  	}, {
+  		id: "heading",
+  		keys: ["heading", "h1", "h2", "h3", "h4", "h5", "h6", "small", "title", "subtitle", "subheading"]
+  	}, {
+  		id: "images-captions",
+  		keys: ["img", "image", "responsive", "responsiveness", "caption", "figure", "figcaption"]
+  	}, {
+  		id: "lists",
+  		keys: ["list", "ul", "ol", "li"]
+  	}, {
+  		id: "code-and-quotations",
+  		keys: ["code", "pre", "kbd", "blockquote", "quotation"]
+  	}, {
+  		id: "grid",
+  		keys: ["grid", "grid system", "col", "column", "layout", "row", "container", "small", "medium", "large", "sm", "md", "lg", "cols", "predefined", "offset", "order", "reorder", "first", "last", "normal"]
+  	}, {
+  		id: "cards",
+  		keys: ["card", "row", "section", "container", "col", "column", "small", "large", "fluid", "warning", "error"]
+  	}, {
+  		id: "card-sections",
+  		keys: ["card", "row", "section", "container", "col", "column", "media", "double-padded", "dark"]
+  	}, {
+  		id: "forms-and-input",
+  		keys: ["form", "fieldset", "legend", "input", "type", "text", "checkbox", "radio", "email", "password", "tel", "input-group", "input group", "row", "col", "column", "vertical", "fluid", "file", "upload", "select", "textarea", "option", "label"]
+  	}, {
+  		id: "buttons",
+  		keys: ["button", "input", "reset", "submit", "link", "a", "label", "primary", "secondary", "tertiary", "aria", "small", "large", "inverse"]
+  	}, {
+  		id: "input-grouping",
+  		keys: ["input group", "input-group", "vertical", "fluid", "input", "button", "button group", "button-group"]
+  	}, {
+  		id: "header",
+  		keys: ["navigation", "header", "sticky", "button", "logo", "link"]
+  	}, {
+  		id: "navigation-bar",
+  		keys: ["navigation", "bar", "nav", "link"]
+  	}, {
+  		id: "footer",
+  		keys: ["navigation", "footer", "sticky", "link"]
+  	}, {
+  		id: "drawer",
+  		keys: ["drawer", "checkbox", "toggle", "close", "drawer-toggle", "drawer-close", "menu", "navigation", "hamburger"]
+  	}, {
+  		id: "tables",
+  		keys: ["table", "caption", "thead", "tbody", "tr", "th", "td", "horizontal", "striped", "hoverable"]
+  	}, {
+  		id: "text-highlighting",
+  		keys: ["mark", "highlight", "text highlighting", "tag", "primary", "secondary", "tertiary", "inline-block"]
+  	}, {
+  		id: "toasts",
+  		keys: ["span", "toast", "mobile", "contextual", "message"]
+  	}, {
+  		id: "tooltips",
+  		keys: ["tooltip", "aria-label", "contextual", "bottom", "span"]
+  	}, {
+  		id: "modal-dialogs",
+  		keys: ["modal", "dialog", "contextual", "alert", "notification"]
+  	}, {
+  		id: "spoilers-and-accordions",
+  		keys: ["spoiler", "collapse", "accordion", "contextual", "vertical tabs"]
+  	}, {
+  		id: "progress-bars",
+  		keys: ["progress", "bar", "primary", "secondary", "tertiary", "inline"]
+  	}, {
+  		id: "donut-spinners",
+  		keys: ["spinner", "donut", "loading", "progress", "primary", "secondary", "tertiary", "inline", "animation", "animated"]
+  	}, {
+  		id: "icons",
+  		keys: ["icon", "svg", "feather", "icons"]
+  	}, {
+  		id: "visibility-helpers",
+  		keys: ["hidden", "visibility", "visually-hidden", "accessibility", "utility"]
+  	}, {
+  		id: "element-decorators",
+  		keys: ["border", "border-radius", "bordered", "rounded", "circular", "shadowed", "utility"]
+  	}, {
+  		id: "responsive-spacing-sizing",
+  		keys: ["responsiveness", "margin", "padding", "responsive-margin", "responsive-margin"]
+  	}
+  ];
   var options = {threshold:0.4, keys:["keys"]};
   var fuse = new Fuse(docs,options);
   function search(){
